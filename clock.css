@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  height: 100vh;
+}
+.flex_display {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#circle_3 {
+  width: 600px;
+  height: 600px;
+  background-color: white;
+  clip-path: circle(50%);
+  position: relative;
+}
+#circle_2 {
+  width: 650px;
+  height: 650px;
+  position: relative;
+  background: whitesmoke;
+  clip-path: circle(50%);
+}
+#circle_1 {
+  width: 700px;
+  height: 700px;
+  position: relative;
+  background: rgb(150, 145, 145);
+  clip-path: circle(50%);
+}
+#circle {
+  z-index: 3;
+  position: relative;
+  top:0;
+  left: 0;
+}
+.tik {
+  /* border: 2px red solid; */
+  width: 45px;
+  height: 582px;
+  position: absolute;
+  top: 7px;
+  left: 278px;
+  transform: rotate(calc(30deg * var(--i)));
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.tik p {
+  width: 10px;
+  height: 26px;
+  background-color: black;
+}
+p.numbers {
+  font-size: 60px;
+  font-family: "Anton", sans-serif;
+  background-color: transparent;
+  transform: rotate(180deg);
+  width: 45px;
+  height: auto;
+  text-align: center;
+}
+.min-tik {
+  transform: rotate(calc(6deg * var(--i)));
+}
+.min-tik p {
+  width: 1px;
+  height: 6px;
+  background-color: black;
+}
+/*calendar*/
+#border1 {
+  border: 2px black solid;
+  width: 207px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 23px;
+  font-family: "Anton", sans-serif;
+  background-color: red;
+  position: absolute;
+  top: 218px;
+  left: 325px;
+  z-index: -1;
+}
+#border2 {
+  width: 198px;
+  height: 34px;
+}
+#border2 span {
+  border: 1px black solid;
+  margin-right: -10px;
+  padding: 0px 8px;
+  background-color: white;
+}
