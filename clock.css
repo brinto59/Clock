@@ -80,7 +80,7 @@ p.numbers {
   border: 2px black solid;
   width: 207px;
   height: 44px;
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
   font-size: 23px;
